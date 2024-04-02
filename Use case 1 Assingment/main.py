@@ -1,6 +1,5 @@
 import json
 
-# JSON data representing the training session
 training_session_json = '''
 {
   "name": "Python Training",
@@ -23,10 +22,9 @@ training_session_json = '''
 }
 '''
 
-# Parse the JSON data into a Python dictionary
 training_session = json.loads(training_session_json)
 
-# Accessing individual elements
+# acess elements from training_session
 name = training_session["name"]
 date = training_session["date"]
 completed = training_session["completed"]
@@ -34,7 +32,7 @@ instructor_name = training_session["instructor"]["name"]
 instructor_website = training_session["instructor"]["website"]
 participants = training_session["participants"]
 
-# Printing the extracted information
+# Printing
 print("Training Session Name:", name)
 print("Date:", date)
 print("Completed:", completed)
